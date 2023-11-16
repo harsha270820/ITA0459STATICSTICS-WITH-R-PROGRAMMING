@@ -1,0 +1,5 @@
+set.seed(42)
+random_numbers <- rnorm(100, mean = 0, sd = 1)  # Adjust mean and sd as needed
+occurrences <- table(random_numbers)
+cat("List of random numbers in normal distribution:\n", random_numbers, "\n\n")
+cat("Occurrences of each value:\n", occurrences, "\n")
