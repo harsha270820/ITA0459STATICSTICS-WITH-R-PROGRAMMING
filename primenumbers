@@ -1,0 +1,15 @@
+sieve_of_eratosthenes <- function(limit) {
+  is_prime <- rep(TRUE, limit + 1)
+  is_prime[1] <- FALSE  # 1 is not a prime number
+
+  for (i in 2:sqrt(limit)) {
+    if (is_prime[i]) {
+      is_prime[i^2:limit] <- FALSE
+    }
+  }
+
+  return(which(is_prime))
+}
+limit <- as.integer(readline(prompt = "Enter the limit to find prime numbers up to: "))
+primes_up_to_limit <- sieve_of_eratosthenes(limit)
+cat("Prime numbers up to", limit, ":", primes_up_to_limit, "\n")
