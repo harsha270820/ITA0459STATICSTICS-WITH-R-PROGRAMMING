@@ -1,0 +1,11 @@
+Name,Age,Gender
+harsha,25,Male
+sri,30,female
+venkat,28,Male
+
+# Read the .csv file
+file_path <- "example.csv"  # Specify the path to your .csv file
+data <- read.csv(file_path)
+
+# Display the content of the data frame
+cat("Content of the .csv file:\n", data, "\n")
