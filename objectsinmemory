@@ -1,0 +1,12 @@
+
+x <- 1:100
+y <- matrix(1:100, ncol = 10)
+z <- "Hello, World!"
+
+object_list <- ls()
+
+cat("Details of objects in memory:\n")
+for (object in object_list) {
+  size <- object.size(get(object))
+  cat(paste("Object:", object, "| Size:", size, "bytes\n"))
+}
