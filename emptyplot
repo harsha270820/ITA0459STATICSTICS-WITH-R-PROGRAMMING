@@ -1,0 +1,5 @@
+# Create an empty plot
+plot(1, type = "n", main = "Empty Plot", xlab = "X-axis", ylab = "Y-axis")
+
+# Create an empty plot with specified axes limits
+plot(1, type = "n", main = "Empty Plot with Axes Limits", xlab = "X-axis", ylab = "Y-axis", xlim = c(0, 10), ylim = c(0, 20))
