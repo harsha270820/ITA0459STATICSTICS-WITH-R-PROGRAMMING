@@ -1,0 +1,9 @@
+# Load the built-in dataset 'women'
+data(women)
+
+# Create a factor corresponding to the height
+height_factor <- cut(women$height, breaks = c(50, 55, 60, 65, 70, 75), labels = c('50-55', '55-60', '60-65', '65-70', '70-75'))
+
+# Display the factor corresponding to height
+cat("Factor Corresponding to Height:\n")
+print(height_factor)
